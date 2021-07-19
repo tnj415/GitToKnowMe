@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f85c83d532.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <nav class="n-bar">
+        <a class="hws" href="#about">About</a>
+        <a class="hws" href="#resume">Resume</a>
+        <a class="hws" href="#projects">Projects</a>
+        <a class="hws" id="contact-nav">Contacts</a>
+    </nav>
+
+    <section class="profile">
+        <article class="info">
+            <h2>Troy Johnson</h2>
+            <p>Full-Stack Developer</p>
+            <button id="contact-btn">Contact Me</button>
+        </article>
+        <article class="portrait">
+            <img src="./assets/img/AvatarSweater_print.png" alt="an avatar self portrait">
+        </article>
+    </section>
+
+    <!-- Modal-->
+    <div id="contact-modal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h2>Contact Me</h2>
+            <ul>
+                <i class="fas fa-user"></i>
+                <li>Troy Johnson</li>
+                <i class="fas fa-phone"></i>
+                <li>(510) 650 - 2894</li>
+                <i class="fas fa-envelope-square"></i>
+                <li>tnj8510@gmail.com</li>
+                <i class="fab fa-github"></i>
+                <li><a href="https://github.com/tnj415">Github</a></li>
+                <i class="fab fa-linkedin"></i>
+                <li><a href="https://www.linkedin.com/in/troy-johnson-728b5b204/">Linkedin</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container about-me" id="about">
+        <h3 class="title" id="fancy">About Me</h3>
+        <p>I love putting time and effort to create beautiful and functional projects</p>
+    </section>
+
+    <section class="container resume" id="resume">
+        <h2 class="title">Resume</h2>
+        <h3 class="project" id="thing1">thing1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque at quidem officia dolore odio animi.</p>
+        <h3 class="project" id="thing1">thing2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero modi numquam libero fugiat
+            voluptatum.</p>
+        <h3 class="project" id="thing1">thing3</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, excepturi architecto! Placeat aspernatur eos
+            rerum.</p>
+        <h3 class="project" id="thing1">thing4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non, tempore quis architecto eveniet.</p>
+        <h3 class="project" id="thing5">thing5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt illo pariatur et magnam rem!</p>
+        <div id="one-line">
+            <p>For my Github&nbsp</p><a href="https://github.com/tnj415">click here!</a>
+        </div>
+        <div id="one-line">
+            <p>For my LinkedIn&nbsp</p><a href="https://www.linkedin.com/in/troy-johnson-728b5b204/">click here!</a>
+        </div>
+        <div id="one-line">
+            <p>For my Resume&nbsp</p><a
+                href="https://drive.google.com/file/d/1VFEsVsV7Lzp8YkD1HQ8ZtNjZ0StK6SGp/view?usp=sharing">click
+                here!</a>
+        </div>
+
+    </section>
+
+    <section class="container projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <p>Click titles to view the live site! (Github links are provided below)</p>
+        <article class="collection">
+            <div class="project1">
+                <img src="./assets/img/cal.jpg" alt="daily planner application">
+                <a href="https://tnj415.github.io/DailyPlanner/">
+                    <h3>Daily Planner</h3>
+                </a>
+                <p>This was one of my first projects. I created an interactive Daily Planner</p>
+            </div>
+            <div class="project2">
+                <img src="./assets/img/pw.PNG" alt="password generator application">
+                <a href="https://tnj415.github.io/PasswordGenerator/">
+                    <h3>Password Generator</h3>
+                </a>
+                <p>Another early work of mine is this Password Generator. This allows users to input criteria for their
+                    password</p>
+            </div>
+            <div class="project3">
+                <img src="./assets/img/mms.PNG" alt="music search website">
+                <a href="https://apal96.github.io/magnificent-music-search/">
+                    <h3>Music Searcher</h3>
+                </a>
+                <p>My first team project is this Music Searcher. Users can find information about an artist and new
+                    similar
+                    songs</p>
+            </div>
+            <div class="project4">
+                <img src="./assets/img/quiz.PNG" alt="quiz game website">
+                <a href="https://tnj415.github.io/QuizGame/">
+                    <h3>Quiz Game</h3>
+                </a>
+                <p>One of my best works is this Quiz Game. The style is modeled after a composition book and it tests
+                    users knowledge of computer coding</p>
+            </div>
+            <div class="project5">
+                <img src="./assets/img/wyw.PNG" alt="weather application">
+                <a href="https://tnj415.github.io/WhatsYoWeather/">
+                    <h3>Weather Application</h3>
+                </a>
+                <p>One of my most polished and useful works is this Weather Application. This allows users to view
+                    weather
+                    conditions around the world and saves prior searches</p>
+            </div>
+        </article>
+        <div class="gh-repos">
+            <h3>GitHub Repositories:</h3>
+            <a href="https://github.com/tnj415/DailyPlanner">Daily Planner</a>
+            <a href="https://github.com/tnj415/PasswordGenerator">Password Generator</a>
+            <a href="https://github.com/apal96/magnificent-music-search">Music Searcher</a>
+            <a href="https://github.com/tnj415/QuizGame">Quiz Game</a>
+            <a href="https://github.com/tnj415/WhatsYoWeather">Weather Application</a>
+        </div>
+    </section>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

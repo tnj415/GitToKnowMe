@@ -1,0 +1,483 @@
+* {
+    /* --accent: #ff88009a; //opaque orange */
+    --section-background: #9cc6f7;
+    --main-background: #546b86;
+
+    --text: var(--section-background);
+    --text-inverse: #9cc6f7;
+    --accent: #9e8159;
+    --accent: #9e8159; /*deep gold*/
+    
+    /* color: var(--text); */
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    /*background-color: #15263a;*/
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgb(253, 253, 253);*/
+    margin: 0px;
+    background-color: var(--main-background);
+
+}
+
+.n-bar {
+
+    --n-text: var(--text-inverse);
+    --n-text-inverse: var(--accent);
+    --n-background: var(--main-background);
+    
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    /* padding-bottom: -10px;
+    margin-bottom: -10px;
+    align-items: baseline; */
+    font-size: 12px;
+    
+    background-color: var(--n-background);
+    /*color: var(--text);*/
+
+    text-decoration: none;
+
+    border-bottom: 3px solid transparent;
+
+}
+
+.n-bar a {
+    color: var(--n-text);
+    margin: 0px 15px;
+    text-decoration: none;
+
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    /*transition: .5s;*/
+}
+
+.n-bar a:hover {
+    color: var(--n-text-inverse);
+    border-bottom: 2px solid var(--n-text-inverse);
+    transition: .2s;
+}
+
+.n-scrolled {
+    --n-text-inverse: var(--main-background);
+    --n-background: var(--accent);
+
+    box-shadow: 0 3px 20px rgba(black, 0.2);
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 0px 0px 200px 0px;
+    padding: 160px 70px;
+    background: var(--main-background);
+    color: var(--text-inverse);
+    background-image: url('./assets/img/cool-blue.png');
+    /*background-color: var(--section-background);*/
+
+}
+
+article.info {
+    border-left: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+    font-size: large;
+}
+
+article.info p, h2, button {
+    
+margin: 10px;
+    /* box-shadow: 2px 2px 2px px #ffffff; */
+}
+
+article.info button {
+    margin: 10px 0px;
+    color: var(--text-inverse);
+    border: 2px solid var(--text-inverse);
+    /*width: calc(fit-content + 2px);*/
+    /* align-self: center; */
+}
+
+/* article.info::after {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 4px;
+    height: 80%;
+    background: var(--accent);
+
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform .5s ease-in;
+} */
+
+/* article.info:hover::after {
+    transform: scaleY(1);
+    transform-origin: top;
+} */
+
+.profile img {
+    height: 300px;
+}
+
+button#contact-btn {
+    background-color: transparent;
+    /* color: var(--text); */
+    
+    padding: 5px 10px;
+    border-radius: 15px;
+    font: inherit;
+   
+}
+
+button#contact-btn:hover {
+    background-color: var(--accent);
+    /*border-color: var(--text-inverse);*/
+    /*color: var(--text-inverse);*/
+   
+}
+
+
+.about-me,
+.resume,
+.projects {
+    margin: 100px 20px;
+    padding: 20px 50px;
+    color: black;
+    background-color: var(--section-background);
+}
+
+
+.title {
+    padding: 1em 1.5em;
+    position: relative;
+    left: -30px;
+    width: fit-content;
+    transition: .5s;
+    color: var(--text);
+
+
+}
+
+/* .title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    border-right: 30px solid var(--accent);
+
+    transform: scaleX(.1);
+    transform-origin: left;
+
+    background: var(--background);
+} */
+
+.title:hover {
+    color: var(--main-background);
+    /*background-color:*/
+}
+
+
+.fancy {
+    transform: scaleX(1);
+    color: var(--text-inverse);
+    background: var(--accent);
+
+}
+
+#one-line,
+#one-line a {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    color: rgb(124, 202, 216)
+}
+
+.collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects h3, .projects a {
+    color: rgb(124, 202, 216);
+    text-align: center;
+    text-decoration: none;
+}
+.projects img{
+    height:200px;
+    width: 300px;
+    transition: .75s ease-in;
+}
+
+.project1 ,
+.project2 ,
+.project3 ,
+.project4 ,
+.project5 {
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    transition: .75s ease-in;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover {
+    background-color: rgb(101, 104, 102); 
+}
+
+.project1 p,
+.project1 p,
+.project2 p,
+.project3 p,
+.project4 p,
+.project5 p {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .75s ease-in;
+    color: rgb(124, 202, 216);
+    font-weight: bold;
+    padding: 2px;
+}
+
+.project1:hover p ,
+.project2:hover p ,
+.project3:hover p ,
+.project4:hover p ,
+.project5:hover p {
+    opacity: 1;
+}
+
+.project1:hover img, 
+.project2:hover img, 
+.project3:hover img, 
+.project4:hover img, 
+.project5:hover img {
+    opacity:.2;
+    
+}
+
+.gh-repos{
+    display: flex;
+    flex-direction: column;
+}
+
+.gh-repos a:hover {
+    color:white;
+}
+
+/* .from-left {
+    grid-column: 2/3;
+    transform: translateX(-50%);
+}
+
+.from-right {
+    grid-column: 2/3;
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition:
+        opacity 2.5s ease-in,
+        transform 4s ease-in;
+    opacity: 0;
+}
+
+.from-left,
+.from-right {
+    transition: translateX(0);
+    opacity: 1;
+} */
+
+
+/***********************************************************************/
+
+/* style button */
+#myBtn {
+    border: 2px solid white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* adjust style when hovered */
+#myBtn:hover {
+    color: green;
+    background-color: white;
+
+}
+
+/* the modal (background) */
+.modal {
+    color: white;
+    display: none;
+    /* hidden by default */
+    position: fixed;
+    /* stay in place */
+    z-index: 5;
+    /* sit on top */
+    padding-top: 100px;
+    /* padding on all sides*/
+    left: 0;
+    /* location of the box */
+    top: 0;
+    /* location of the box */
+    width: 100%;
+    /* full width */
+    height: 100%;
+    /* full height */
+    background-color: rgba(78, 73, 73, 0.767);
+    /* black with opacity */
+    z-index: 100;
+}
+
+/* style modal */
+.modal-content {
+
+    margin: auto;
+    border: 3px solid white;
+    width: 50%;
+    /*height: 50%; */
+    text-align: center;
+    line-height: 200%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0px 10px;
+    min-width: fit-content;
+
+}
+
+span.close {
+    position: absolute;
+    /* float: right; */
+    /* justify-content: end; */
+    /* align-items: end; */
+    /* align-content: end; */
+    display: flex;
+    top: 10%;
+    left: 72%;
+    color: white;
+
+}
+
+@media screen and (max-width: 900px) {
+
+    article.info::after {
+        display:none;
+    }
+
+    span.close {
+        display: none;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/* align a tags */
+.modal-content a {
+    align-content: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* align icons */
+.modal-content i {
+    float: left;
+}
+
+/* no bullet points */
+.modal-content li {
+    list-style-type: none;
+}
+
+/* everything changes to orange when hovered */
+.modal-content li:hover,
+.modal-content a:hover,
+.modal-content i:hover {
+    color: rgb(8, 104, 59);
+}
+
+/* style close button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 25px;
+    padding-top: 20px;
+}
+
+/* style close button when hovered */
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: rgb(8, 104, 59)
+}
+
+/****************************************************************/
+
+
+@media screen and (max-width: 900px) {
+
+    .profile{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hws{
+        /* display:none; */
+        font-size:4vw;
+        justify-content: space-between;
+    }
+
+    .menu-btn {
+        display: block;
+        justify-content: end;
+    }
+
+    .collection {
+        display:flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5 {
+        margin:0px !important;
+        border: 5px solid rgb(43, 82, 64);
+        overflow: none;
+    }
+}
