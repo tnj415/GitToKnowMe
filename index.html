@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google fonts -->
+    <!-- google fonts (main text)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tourney:wght@200&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f85c83d532.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
@@ -19,7 +19,7 @@
 <body>
     <nav class="n-bar">
         <a class="hws" href="#about">About</a>
-        <a class="hws" href="#resume">Resume</a>
+        <a class="hws" href="#languages">Languages</a>
         <a class="hws" href="#projects">Projects</a>
         <a class="hws" id="contact-nav">Contacts</a>
     </nav>
@@ -39,7 +39,7 @@
     <div id="contact-modal" class="modal">
 
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <!-- <span class="close">&times;</span> -->
 
             <h2>Contact Me</h2>
             <ul>
@@ -57,25 +57,35 @@
         </div>
     </div>
 
-    <section class="container about-me" id="about">
-        <h3 class="title" id="fancy">About Me</h3>
-        <p>I love putting time and effort to create beautiful and functional projects</p>
+    <section class="container about" id="about">
+        <h2 class="title">About Me</h2>
+        <h4>I love creating attractive and intuitive user interfaces for back end projects that challenge my ability </h4>
     </section>
 
-    <section class="container resume" id="resume">
-        <h2 class="title">Resume</h2>
-        <h3 class="project" id="thing1">thing1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque at quidem officia dolore odio animi.</p>
-        <h3 class="project" id="thing1">thing2</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero modi numquam libero fugiat
-            voluptatum.</p>
-        <h3 class="project" id="thing1">thing3</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, excepturi architecto! Placeat aspernatur eos
-            rerum.</p>
-        <h3 class="project" id="thing1">thing4</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non, tempore quis architecto eveniet.</p>
-        <h3 class="project" id="thing5">thing5</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt illo pariatur et magnam rem!</p>
+    <section class="container languages" id="languages">
+        <h2 class="title">Languages</h2>
+
+        <div class="language_logos">
+            <div class="logo1">
+                <p>HTML</p>
+                <img src="./assets/img/html_logo.crop.png" alt="">
+            </div>
+            <div class="logo2">
+                <p>CSS</p>
+                <img src="./assets/img/css_logo.crop.png" alt="">
+            </div>
+            <div class="logo3">
+                <p>JavaScript</p>
+                <img src="./assets/img/js_logo.crop.png" alt="">
+            </div>
+            <div class="difficult">
+            <p>Node.JS</p>
+            <div class="logo4">
+                <img src="./assets/img/nodejs_logo.crop.png" alt="">
+            </div>
+            </div>
+        </div>
+    
         <div id="one-line">
             <p>For my Github&nbsp</p><a href="https://github.com/tnj415">click here!</a>
         </div>
@@ -87,7 +97,6 @@
                 href="https://drive.google.com/file/d/1VFEsVsV7Lzp8YkD1HQ8ZtNjZ0StK6SGp/view?usp=sharing">click
                 here!</a>
         </div>
-
     </section>
 
     <section class="container projects" id="projects">

@@ -101,9 +101,9 @@ btnNav.onclick = function() { //For nav Bar
 }
 
 // when the user clicks on <span> (x), close the modal
-modalClose.onclick = function() {
-  modal.style.display = "none";
-}
+// modalClose.onclick = function() {
+//   modal.style.display = "none";
+// }
 
 // when the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
