@@ -42,14 +42,11 @@
         #00f7ff,
         #00f7ff,
         #00f7ff
-    );
+    );*/
 
-   
+scroll-behavior: smooth;
+scroll-padding-top: 2rem;
 
-    
-
-    /* color: var(--text); */
-    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -209,10 +206,6 @@ article.info::after {
     outline-offset: -10px;
     
 }
-.about{
-    padding: 50px 50px 100px 50px;
-}
-
 
 .title {
     
@@ -287,6 +280,7 @@ padding: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects h3, .projects a {
