@@ -3,24 +3,35 @@
     font-family: 'Libre Baskerville', serif;
     
     /* --accent: #ff88009a; //opaque orange */
-    --section-background: #5522cc;
-    --main-background: #ffffff;
+    --main-background: #1b3755;
+    /* --main-background: #1d5083; mom */
+    /* --main-background: #153c62; current blue */
+    --text-head: #e4a757;
+    /* --text-head: #ffbb29;mom */
+    /* --text-head: #cfa357; gold */
+    /* --main-background: #224f79; grey blue*/
+    /* --section-background: #0d989c; */
+    --section-background: #ffffff;
+    /* --section-background: #94929b; mom */
+    --accent: #ffffff;
 
-    --text: var(--section-background);
-    --text-light: white;
-    --text-dark: #000000;
-    --accent: #00f7ff;
+    --text: #1b3755;
+    --text-inverse: #e4a757;
+    --text-title: rgb(0, 0, 0);
+    /* --text-light: white;
+    --text-dark: #000000; */
+    /*--accent: #00f7ff; light blue*/
     /*--accent: #9e8159; /*deep gold*/
 
     --gradient: linear-gradient(
         45deg, 
-        #ffffff,
-        #ffffff,
-        #ffffff,
-        #a2fcff,
-        #ffffff,
-        #ffffff,
-        #ffffff
+        var(--main-background),
+        var(--main-background),
+        var(--main-background),
+        var(--accent),
+        var(--main-background),
+        var(--main-background),
+        var(--main-background)
       
      
     );
@@ -64,7 +75,7 @@ body {
 
 .n-bar {
 
-    --n-text: var(--text);
+    --n-text: var(--text-head);
     --n-text-inverse: var(--accent);
     --n-background: var(--main-background);
     
@@ -104,8 +115,8 @@ body {
 }
 
 .n-scrolled {
-    --n-text: var(--main-background);
-    --n-text-inverse: var(--accent);
+    --n-text: var(--text);
+    --n-text-inverse: var(--text-inverse);
     --n-background: var(--section-background);
 
     box-shadow: 2px 3px 20px rgba(black, 0.2);
@@ -132,7 +143,7 @@ article.info {
     justify-content: center;
     align-items: center;
     position: relative;
-    
+    color: var(--text-head);
     font-size: xx-large;
 }
 
@@ -145,13 +156,13 @@ margin: 25px;
  article.info button {
     cursor: pointer;
     margin: 10px 0px;
-    color: var(--text);
+    color: var(--text-head);
     /* background-color: var(--main-background); */
     background-image: var(--gradient);
     background-size: 500%;
     background-position: right;
     transition: background-position .5s;
-    border: 2px solid var(--text);
+    border: 2px solid var(--text-head);
    
     padding: 5px 10px;
     border-radius: 15px;
@@ -171,7 +182,7 @@ article.info button:focus {
 }
 
 
-article.info::after {
+/* article.info::after {
     content: "";
     position: absolute;
     left: -50px;
@@ -183,13 +194,13 @@ article.info::after {
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform .5s ease-in;
-}
+} */
 
- article.info:hover::after {
+ /* article.info:hover::after {
     transform: scaleY(1);
     transform-origin: top;
     background-color: var(--accent);
-}
+} */
 
 .profile img {
     height: 550px;
@@ -198,11 +209,12 @@ article.info::after {
 .about,
 .languages,
 .projects {
-    margin: 70px px;
+    margin: 70px 30px;
     padding: 50px 50px;
-    color: var(--text-light);
+    color: var(--text);
+    font-weight: bold;
     background-color: var(--section-background);
-    outline: 2px solid var(--accent);
+    outline: 3px solid var(--text-inverse);
     outline-offset: -10px;
     
 }
@@ -214,7 +226,7 @@ article.info::after {
     left: -30px;
     width: fit-content;
     transition: .5s;
-    color: white;
+    color: var(--text);
 
 
 }
@@ -227,8 +239,10 @@ article.info::after {
 
 .fancy {
     transform: scaleX(1);
-    color: var(--text-dark);
-    background: var(--accent);
+    color: var(--main-background);
+    background: var(--text-head);
+    /* background: #6f13a8; mom */
+    /* background: rgb(79, 0, 128); */
 
 }
 
@@ -248,34 +262,40 @@ article.info::after {
 .logo3 img,
 .logo4 img {
 width: 100px;
-
 margin: 0px;
 padding: 0px;
+
 
 }
 
 .logo4 {
     /* position: relative; */
-    background-color: white;
+    background-color: rgba(233, 232, 232, 0.349);
     padding: 20px 10px 30px 10px;
+    border: 2px solid rgba(163, 163, 163, 0.397);
     border-radius: 15px;
     margin-bottom: 7px;
 }
 
 
 
-#one-line,
-#one-line a {
+#one-line {
+
     display: flex;
     align-items: baseline;
+}
+
+#one-line p, #one-line a {
+    font-weight: bold;
+    color: var(--text);
     text-decoration: none;
-    color: var(--accent);
+    margin-top: 10px;
+    transition: .1s;
 }
 
-#one-line p {
-    color: var(--text-light);
+#one-line a:hover {
+    color: var(--text-head)
 }
-
 .collection {
     display: flex;
     flex-direction: row;
@@ -283,11 +303,20 @@ padding: 0px;
     justify-content: center;
 }
 
+/* .projects p{
+    font-weight: bold;
+color: var(--text-inverse);
+} */
+
 .projects h3, .projects a {
-    color: var(--section-background);
+    color: var(--text);
     text-align: center;
     text-decoration: none;
-    transition: .5s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.projects h3:hover, .projects a:hover {
+    color: white;
 }
 
 .projects img{
@@ -296,17 +325,17 @@ padding: 0px;
     transition: .5s ease-in;
 }
 
-.project1 ,
-.project2 ,
-.project3 ,
-.project4 ,
+.project1,
+.project2,
+.project3,
+.project4,
 .project5 {
     position: relative;
     margin: 20px;
     padding: 10px;
     background-color: white;
     transition: .5s ease-in;
-    border: 4px solid var(--accent)
+    border: 4px solid var(--text-head);
 }
 
 .project1:hover,
@@ -314,7 +343,7 @@ padding: 0px;
 .project3:hover,
 .project4:hover,
 .project5:hover {
-    background-color: var(--text);
+    background-color: var(--text-head);
 }
 
 .project1 p,
@@ -326,19 +355,17 @@ padding: 0px;
     position: absolute;
     top: 0;
     opacity: 0;
-    transition: .5s ease-in;
-    color: var(--text-light);
-    
+    transition: .5s ease-in;    
     padding: 2px;
 }
 
-.project1:hover h3,
+/* .project1:hover h3,
 .project2:hover h3,
 .project3:hover h3,
 .project4:hover h3,
 .project5:hover h3 {
-    color: var(--accent)
-}
+    color: var(--main-background)
+} */
 
 
 
@@ -356,23 +383,24 @@ padding: 0px;
 .project3:hover img, 
 .project4:hover img, 
 .project5:hover img {
-    opacity: 0;
+    opacity: .1;
     
 }
 
 .gh-repos{
-    color: var(--text-light);
+    /* color: var(--text); */
     display: flex;
     flex-direction: column;
 }
 
 .gh-repos a,
 .gh-repos h3{
-    color: var(--text-light);
+    color: var(--text);
+    transition: 0.1s;
 }
 
 .gh-repos a:hover {
-    color:var(--accent);
+    color:var(--text-head);
 }
 
 /* .from-left {
