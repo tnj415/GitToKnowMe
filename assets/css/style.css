@@ -270,10 +270,9 @@ padding: 0px;
 
 .logo4 {
     /* position: relative; */
-    background-color: white;
-    /* background-color: rgba(233, 232, 232, 0.349); */
+    background-color: rgba(233, 232, 232, 0.349);
     padding: 20px 10px 30px 10px;
-    /* border: 2px solid rgba(255, 255, 255, 0.397); */
+    border: 2px solid rgba(255, 255, 255, 0.397);
     /* border: 2px solid rgba(163, 163, 163, 0.397); */
     border-radius: 15px;
     margin-bottom: 7px;
