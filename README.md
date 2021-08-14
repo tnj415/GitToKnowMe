@@ -21,19 +21,19 @@
 * This website was created with HTML,CSS,JavaScript code on Microsoft Visual Studio Code.
 
 # Installation
-* Go to https://github.com/tnj415/officialPortfolio and copy the repository on Github by clicking the green code button.
+* Go to https://github.com/tnj415/GitToKnowMe and copy the repository on Github by clicking the green code button.
 * Open your terminal, navigate to destination you want to download this repository, and run the command:
-    * $ git clone https://github.com/tnj415/officialPortfolio.git
+    * $ git clone https://github.com/tnj415/GitToKnowMe.git
 
 # Usage
-* The current version of the website can be accessed at the url: https://tnj415.github.io/officialPortfolio/
+* The current version of the website can be accessed at the url: https://tnj415.github.io/GitToKnowMe/
 * This website can be navigated with the links at the top, or by scrolling through the website in a website browser on a computer, laptop, tablet, or cellphone.
 
 # Collaboration
 * The sole developer of this website is me, Troy Johnson.
 
 # Github
-* The Repository can be accessed on Github at https://github.com/tnj415/officialPortfolio
+* The Repository can be accessed on Github at https://github.com/tnj415/GitToKnowMe
 
 # eMail
 * The best way to contact me is at tnj8510@gmail.com.
